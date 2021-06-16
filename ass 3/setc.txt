@@ -1,0 +1,76 @@
+bash-4.2$ ls /etc/sambha
+ls: cannot access /etc/sambha: No such file or directory
+bash-4.2$ pwd
+/home/cslogin/bcafy4
+bash-4.2$ mkdir sambha
+bash-4.2$ ls /etc/sambha
+ls: cannot access /etc/sambha: No such file or directory
+bash-4.2$ cd /
+bash-4.2$ ls
+bin  boot  dev	etc  home  lib	lib64  media  mnt  opt	proc  root  run  sbin  srv  sys  tmp  usr  var
+bash-4.2$ cd etc
+bash-4.2$ ls
+abrt			   dconf		       gss			 maven		      printcap		  skel
+adjtime			   default		       gssproxy			 mcelog		      profile		  smartmontools
+aliases			   depmod.d		       host.conf		 mke2fs.conf	      profile.d		  sos.conf
+aliases.db		   dhcp			       hostname			 modprobe.d	      protocols		  speech-dispatcher
+alsa			   DIR_COLORS		       hosts			 modules-load.d       pulse		  ssh
+alternatives		   DIR_COLORS.256color	       hosts.allow		 motd		      purple		  ssl
+anacrontab		   DIR_COLORS.lightbgcolor     hosts.deny		 mtab		      python		  statetab
+asound.conf		   dleyna-server-service.conf  hp			 mtools.conf	      qemu-ga		  statetab.d
+at.deny			   dnsmasq.conf		       idmapd.conf		 multipath	      qemu-kvm		  subgid
+audisp			   dnsmasq.d		       init.d			 my.cnf		      radvd.conf	  subuid
+audit			   dracut.conf		       inittab			 my.cnf.d	      ras		  subversion
+autofs.conf		   dracut.conf.d	       inputrc			 named		      rc0.d		  sudo.conf
+autofs_ldap_auth.conf	   drirc		       iproute2			 named.conf	      rc1.d		  sudoers
+auto.master		   e2fsck.conf		       ipsec.conf		 named.iscdlv.key     rc2.d		  sudoers.d
+auto.master.d		   enscript.cfg		       ipsec.d			 named.rfc1912.zones  rc3.d		  sudo-ldap.conf
+auto.misc		   environment		       ipsec.secrets		 named.root.key       rc4.d		  sysconfig
+auto.net		   ethertypes		       iscsi			 nanorc		      rc5.d		  sysctl.conf
+auto.smb		   exports		       issue			 netconfig	      rc6.d		  sysctl.d
+avahi			   exports.d		       issue.net		 NetworkManager       rc.d		  systemd
+bash_completion.d	   favicon.png		       java			 networks	      rc.local		  system-release
+bashrc			   fcoe			       jvm			 nfs.conf	      rdma		  system-release-cpe
+binfmt.d		   festival		       jvm-commmon		 nfsmount.conf	      redhat-release	  target
+bluetooth		   filesystems		       kdump.conf		 nsswitch.conf	      request-key.conf	  tcsd.conf
+brltty			   firefox		       kernel			 nsswitch.conf.bak    request-key.d	  terminfo
+brltty.conf		   firewalld		       krb5.conf		 ntp		      resolv.conf	  tmpfiles.d
+centos-release		   flatpak		       krb5.conf.d		 numad.conf	      resolv.conf.128A8Z  trusted-key.key
+centos-release-upstream    fonts		       ksmtuned.conf		 oddjob		      rpc		  tuned
+cgconfig.conf		   fprintd.conf		       ld.so.cache		 oddjobd.conf	      rpm		  udev
+cgconfig.d		   fstab		       ld.so.conf		 oddjobd.conf.d       rsyncd.conf	  udisks2
+cgrules.conf		   fuse.conf		       ld.so.conf.d		 openldap	      rsyslog.conf	  updatedb.conf
+cgsnapshot_blacklist.conf  gconf		       libaudit.conf		 opt		      rsyslog.d		  UPower
+chkconfig.d		   gcrypt		       libibverbs.d		 os-release	      rwtab		  usb_modeswitch.conf
+chrony.conf		   gdbinit		       libnl			 PackageKit	      rwtab.d		  vconsole.conf
+chrony.keys		   gdbinit.d		       libreport		 pam.d		      samba		  vimrc
+cifs-utils		   gdm			       libuser.conf		 passwd		      sane.d		  virc
+cron.d			   geoclue		       libvirt			 passwd-	      sasl2		  vmware-tools
+cron.daily		   GeoIP.conf		       locale.conf		 pbm2ppa.conf	      scl		  vsftpd
+cron.deny		   GeoIP.conf.default	       localtime		 pinforc	      securetty		  wgetrc
+cron.hourly		   ghostscript		       login.defs		 pkcs11		      security		  wpa_supplicant
+cron.monthly		   gnupg		       logrotate.conf		 pki		      selinux		  wvdial.conf
+crontab			   GREP_COLORS		       logrotate.d		 plymouth	      services		  X11
+cron.weekly		   groff		       lsm			 pm		      sestatus.conf	  xdg
+crypttab		   group		       lvm			 pnm2ppa.conf	      setroubleshoot	  xinetd.d
+csh.cshrc		   group-		       machine-id		 polkit-1	      setuptool.d	  xml
+csh.login		   grub2.cfg		       magic			 popt.d		      sgml		  yp.conf
+cups			   grub.d		       mail.rc			 postfix	      shadow		  yum
+cupshelpers		   gshadow		       makedumpfile.conf.sample  ppp		      shadow-		  yum.conf
+dbus-1			   gshadow-		       man_db.conf		 prelink.conf.d       shells		  yum.repos.d
+bash-4.2$ ls /etc/*samba*
+lmhosts  smb.conf  smb.conf.example
+bash-4.2$ pwd
+/home/cslogin/bcafy4/ass 3
+bash-4.2$ cat > cities.txt
+maharashtra           
+patna 
+bihar
+deccan
+dehu
+bash-4.2$ sort cities.txt
+bihar
+deccan
+dehu
+maharashtra 
+patna

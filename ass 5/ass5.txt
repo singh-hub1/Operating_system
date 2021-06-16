@@ -1,0 +1,76 @@
+
+ set A)
+-----------------------------------------------------------------------------------------------
+bash-4.2$ chmod 777 ass1.txt
+bash-4.2$ ls -l
+total 8
+-rwxrwxrwx. 1 bcafy4 bcafy4 14 Jan 28 08:10 ass1.txt
+-rw-r--r--. 1 bcafy4 bcafy4 14 Jan 28 08:11 ass2.txt
+bash-4.2$ chmod 777 ass2.txt
+bash-4.2$ ls -l
+total 8
+-rwxrwxrwx. 1 bcafy4 bcafy4 14 Jan 28 08:10 ass1.txt
+-rwxrwxrwx. 1 bcafy4 bcafy4 14 Jan 28 08:11 ass2.txt
+bash-4.2$ 
+
+
+bash-4.2$ chmod 777 assignment
+bash-4.2$ ls -l
+total 16
+drwxrwxrwx. 2 bcafy4 bcafy4 4096 Jan 28 08:11 assignment
+-rwxrw-r--. 1 bcafy4 bcafy4    4 Jan 28 07:48 a.txt
+-rwxrwxrwx. 1 bcafy4 bcafy4    5 Jan 28 07:48 b.txt
+-rw-r-x--x. 1 bcafy4 bcafy4    5 Jan 28 07:48 c.txt
+--------------------------------------------------------------------------------------------------
+bash-4.2$ chmod 461 ass1
+bash-4.2$ ls -l
+total 8
+dr--rw---x. 2 bcafy4 bcafy4 4096 Jan 28  2020 ass1
+drwxr-xr-x. 2 bcafy4 bcafy4 4096 Jan 28  2020 ass2
+bash-4.2$ chmod 461 ass2
+bash-4.2$ ls -l
+total 8
+dr--rw---x. 2 bcafy4 bcafy4 4096 Jan 28  2020 ass1
+dr--rw---x. 2 bcafy4 bcafy4 4096 Jan 28  2020 ass2
+bash-4.2$ cd..
+bash: cd..: command not found
+bash-4.2$ cd ..
+bash-4.2$ pwd
+/home/cslogin/bcafy4/ass 5
+bash-4.2$ chmod 461 assignment
+bash-4.2$ ls -l
+total 20
+dr--rw---x. 4 bcafy4 bcafy4 4096 Jan 28  2020 assignment
+-rwxrw-r--. 1 bcafy4 bcafy4    4 Jan 28 07:48 a.txt
+-rwxrwxrwx. 1 bcafy4 bcafy4    5 Jan 28 07:48 b.txt
+-rw-r-x--x. 1 bcafy4 bcafy4    5 Jan 28 07:48 c.txt
+-rw-r--r--. 1 bcafy4 bcafy4  805 Jan 28 08:35 vishal.txt
+bash-4.2$ 
+---------------------------------------------------------------------------------------------------
+set B)
+ps
+  PID TTY          TIME CMD
+ 4033 pts/0    00:00:00 bash
+ 4034 pts/0    00:00:00 ps
+bash-4.2$ ps 3799
+  PID TTY      STAT   TIME COMMAND
+bash-4.2$ kill 3799
+bash: kill: (3799) - No such process
+bash-4.2$ free -m
+              total        used        free      shared  buff/cache   available
+Mem:           7765        1081        5141          11        1543        6381
+Swap:          7935           0        7935
+at hello.sh now
+syntax error. Last token seen: h
+Garbled time
+bash-4.2$ at 3:30 pm 
+at> vi
+at> echo
+at> <EOT>
+job 1 at Tue Feb  4 15:30:00 2020
+bash-4.2$ atq
+1	Tue Feb  4 15:30:00 2020 a bcafy4
+bash-4.2$ at -l
+1	Tue Feb  4 15:30:00 2020 a bcafy4
+bash-4.2$ 
+

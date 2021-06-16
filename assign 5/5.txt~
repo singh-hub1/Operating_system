@@ -1,0 +1,13 @@
+bash-4.1$ cat > a.txt
+kushal
+bash-4.1$ cat > b.txt
+mahajan
+bash-4.1$ cat > c.txt
+bash-4.1$ ls -l 
+total 12
+-rw-rw-r--. 1 bcafy2 bcafy2 0 Jan 28  2020 5.txt
+-rw-rw-r--. 1 bcafy2 bcafy2 7 Jan 28  2020 a.txt
+-rw-rw-r--. 1 bcafy2 bcafy2 8 Jan 28  2020 b.txt
+----------. 1 bcafy2 bcafy2 6 Jan 28  2020 c.txt
+
+

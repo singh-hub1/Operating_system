@@ -1,0 +1,13 @@
+#!/bin/bash
+echo "enter a file name"
+read -p
+if[ -b $p ]
+then
+ echo "file exists and it is block special file"
+ fi
+ if[ -c $p ]
+ then 
+echo " file exists and it is chaacter file
+fi
+if [ -a $p ]
+ 

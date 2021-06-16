@@ -1,0 +1,206 @@
+bash-4.2$ mkdir fybca
+bash-4.2$ cd
+bash-4.2$ pwd
+/home/cslogin/bcafy4
+bash-4.2$ cd fybca
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca
+bash-4.2$ mkdir co
+bash-4.2$ mkdir rdbms
+bash-4.2$ mkdir os
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca
+bash-4.2$ cd os
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca/os
+bash-4.2$ cd co
+bash: cd: co: No such file or directory
+bash-4.2$ cd.. os
+bash: cd..: command not found
+bash-4.2$ cd ..
+bash-4.2$ cd co
+bash-4.2$ touch som.txt
+bash-4.2$ cd..
+bash: cd..: command not found
+bash-4.2$ cd ..
+bash-4.2$ cd rdbms
+bash-4.2$ touch rahul.txt
+bash-4.2$ cd ..
+bash-4.2$ mv som.txt /home/cslogin/bcafy4/fybca/os
+mv: cannot stat ‘som.txt’: No such file or directory
+bash-4.2$ cd co
+bash-4.2$ mv som.txt /home/cslogin/bcafy4/fybca/os
+bash-4.2$ cd rdmbs 
+bash: cd: rdmbs: No such file or directory
+bash-4.2$ cd rdbms
+bash: cd: rdbms: No such file or directory
+bash-4.2$ mv rahul.txt /home/cslogin/bcafy4/fybca/os
+mv: cannot stat ‘rahul.txt’: No such file or directory
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca/co
+bash-4.2$ cd ..
+bash-4.2$ cd rdbms
+bash-4.2$ mv rahul.txt/home/cslogin/bcafy4/fybca/os
+mv: missing destination file operand after ‘rahul.txt/home/cslogin/bcafy4/fybca/os’
+Try 'mv --help' for more information.
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca/rdbms
+bash-4.2$ mv rahul.txt /home/cslogin/bcafy4/fybca/os
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca/rdbms
+bash-4.2$ echo $user
+
+bash-4.2$ 
+bash-4.2$ echo $user
+
+bash-4.2$ echo $ user
+$ user
+bash-4.2$ echo $USER
+bcafy4
+bash-4.2$ echo $UID
+553
+bash-4.2$ hostname
+mcapc4
+bash-4.2$ uname
+Linux
+bash-4.2$ ls *.txt
+ls: cannot access *.txt: No such file or directory
+bash-4.2$ cat >adrita.txt
+pwd
+touch adrita.txt
+ls *.txt
+^[cd ..
+fg
+cd ..
+pwd
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca/rdbms
+bash-4.2$ cd ..
+bash-4.2$  ls *.txt
+ls: cannot access *.txt: No such file or directory
+bash-4.2$ cd rdbms
+bash-4.2$ ls *.txt
+adrita.txt
+bash-4.2$ mkdir assignment1
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca/rdbms
+bash-4.2$ cd ..
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca
+bash-4.2$ mkdir assignment1
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca
+bash-4.2$ touch myfile.txt
+bash-4.2$ cp myfile.txt assignment1
+bash-4.2$ ren myfile.txt t_1.txt
+bash: ren: command not found
+bash-4.2$ mv  myfile.txt t_1.txt
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca
+bash-4.2$ ls -lt
+total 16
+drwxr-xr-x. 2 bcafy4 bcafy4 4096 Dec 31  2019 assignment1
+-rw-r--r--. 1 bcafy4 bcafy4    0 Dec 31  2019 t_1.txt
+drwxr-xr-x. 3 bcafy4 bcafy4 4096 Dec 31 08:17 rdbms
+drwxr-xr-x. 2 bcafy4 bcafy4 4096 Dec 31 08:05 os
+drwxr-xr-x. 2 bcafy4 bcafy4 4096 Dec 31 07:59 co
+bash-4.2$ cat>student.txt
+aditi
+bash-4.2$ ls -lh
+total 20K
+drwxr-xr-x. 2 bcafy4 bcafy4 4.0K Dec 31 08:19 assignment1
+drwxr-xr-x. 2 bcafy4 bcafy4 4.0K Dec 31 07:59 co
+drwxr-xr-x. 2 bcafy4 bcafy4 4.0K Dec 31 08:05 os
+drwxr-xr-x. 3 bcafy4 bcafy4 4.0K Dec 31 08:17 rdbms
+-rw-r--r--. 1 bcafy4 bcafy4    6 Dec 31  2019 student.txt
+-rw-r--r--. 1 bcafy4 bcafy4    0 Dec 31 08:19 t_1.txt
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca
+bash-4.2$ head 5 student.txt
+head: cannot open ‘5’ for reading: No such file or directory
+==> student.txt <==
+aditi
+cnjfnc jg
+vghc b cb
+cvnhf
+vmj gfydc
+ncvbvbfg
+fvngjc fg
+jhv bcnnjcn
+nbhcjhvc nh
+nvhcnxjjc
+bash-4.2$ head -5 student.txt
+aditi
+cnjfnc jg
+vghc b cb
+cvnhf
+vmj gfydc
+bash-4.2$ tail -5 student.txt
+nbhcjhvc nh
+nvhcnxjjc
+bjvcmbkjm vjfk
+mgjncvmvbmvm
+
+bash-4.2$ pwd
+/home/cslogin/bcafy4/fybca
+bash-4.2$ cat>agc.txt
+1
+2
+3
+4
+5
+6
+7
+bash-4.2$ cat>shreya.txt
+8
+9
+10
+bash-4.2$ 
+bash-4.2$ diff
+diff: missing operand after 'diff'
+diff: Try 'diff --help' for more information.
+bash-4.2$ diff agc.txt shreya.txt
+1,7c1,3
+< 1
+< 2
+< 3
+< 4
+< 5
+< 6
+< 7
+---
+> 8
+> 9
+> 10
+bash-4.2$ comm agc.txt shreya.txt
+1
+2
+3
+4
+5
+6
+7
+	8
+	9
+comm: file 2 is not in sorted order
+	10
+bash-4.2$ sort shreya.txt
+10
+8
+9
+bash-4.2$ comm agc.txt shreya.txt
+1
+2
+3
+4
+5
+6
+7
+	8
+	9
+comm: file 2 is not in sorted order
+	10
+bash-4.2$ cmp agc.txt shreya.txt
+agc.txt shreya.txt differ: byte 1, line 1
+bash-4.2$ 
+

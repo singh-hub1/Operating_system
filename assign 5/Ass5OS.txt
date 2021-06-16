@@ -1,0 +1,301 @@
+                                                                                    SET -  A 
+root@kali:~# cd Desktop
+root@kali:~/Desktop# touch 1.txt 2.txt 3.txt
+root@kali:~/Desktop# ls -l
+total 16
+-rw-r--r-- 1 root root    0 Feb  4 04:46 1.txt
+-rw-r--r-- 1 root root    0 Feb  4 04:46 2.txt
+-rw-r--r-- 1 root root    0 Feb  4 04:46 3.txt
+-rw-r--r-- 1 root root   30 Dec 27 09:23 iprange.txt
+-rwxr-xr-- 1 root root  216 Dec 27 09:36 ipsweep.sh
+-rw-r--r-- 1 root root  271 Dec 27 08:38 ip.txt
+drwxr-xr-x 4 root root 4096 Jan  1 02:16 lscript
+root@kali:~/Desktop# 
+
+root@kali:~/Desktop# 
+root@kali:~/Desktop# chmod -764 1.txt
+root@kali:~/Desktop# ls -l
+total 16
+---------- 1 root root    0 Feb  4 04:46 1.txt
+-rw-r--r-- 1 root root    0 Feb  4 04:46 2.txt
+-rw-r--r-- 1 root root    0 Feb  4 04:46 3.txt
+-rw-r--r-- 1 root root   30 Dec 27 09:23 iprange.txt
+-rwxr-xr-- 1 root root  216 Dec 27 09:36 ipsweep.sh
+-rw-r--r-- 1 root root  470 Feb  4 04:51 ip.txt
+drwxr-xr-x 4 root root 4096 Jan  1 02:16 lscript
+
+
+root@kali:~# chmod -764 2.txt
+chmod: cannot access '2.txt': No such file or directory
+root@kali:~# cd Desktop
+root@kali:~/Desktop# chmod -764 2.txt
+root@kali:~/Desktop# ls -l
+total 16
+---------- 1 root root    0 Feb  4 04:46 1.txt
+---------- 1 root root    0 Feb  4 04:46 2.txt
+---------- 1 root root    0 Feb  4 04:46 3.txt
+-rw-r--r-- 1 root root   30 Dec 27 09:23 iprange.txt
+-rwxr-xr-- 1 root root  216 Dec 27 09:36 ipsweep.sh
+-rw-r--r-- 1 root root  911 Feb  4 04:55 ip.txt
+drwxr-xr-x 4 root root 4096 Jan  1 02:16 lscript
+root@kali:~/Desktop# 
+
+
+root@kali:~/Desktop# 
+root@kali:~/Desktop# 
+root@kali:~/Desktop# mkdir Assignment
+root@kali:~/Desktop/Assignment# mkdir Ass1 Ass2 
+root@kali:~/Desktop# ls -l Ass1 Ass2
+Ass1:
+total 0
+
+Ass2:
+total 0
+root@kali:~/Desktop# ls -l 
+drwxr-xr-x 2 root root 4096 Feb  4 05:00 Ass1
+drwxr-xr-x 2 root root 4096 Feb  4 05:00 Ass2
+
+root@kali:~/Desktop# 
+root@kali:~/Desktop# 
+root@kali:~/Desktop# 
+root@kali:~/Desktop# chmod -777 Ass1
+root@kali:~/Desktop# ls -l
+total 24
+---------- 1 root root    0 Feb  4 04:46 1.txt
+---------- 1 root root    0 Feb  4 04:46 2.txt
+---------- 1 root root    0 Feb  4 04:46 3.txt
+d--------- 2 root root 4096 Feb  4 05:00 Ass1
+drwxr-xr-x 2 root root 4096 Feb  4 05:00 Ass2
+-rw-r--r-- 1 root root   30 Dec 27 09:23 iprange.txt
+-rwxr-xr-- 1 root root  216 Dec 27 09:36 ipsweep.sh
+-rw-r--r-- 1 root root 1849 Feb  4 05:03 ip.txt
+drwxr-xr-x 4 root root 4096 Jan  1 02:16 lscript
+root@kali:~/Desktop# 
+root@kali:~/Desktop# 
+root@kali:~/Desktop# 
+root@kali:~/Desktop# useradd bob
+root@kali:~/Desktop# chown bob 1.txt
+root@kali:~/Desktop# ls -l
+total 24
+---------- 1 bob  root    0 Feb  4 04:46 1.txt
+---------- 1 root root    0 Feb  4 04:46 2.txt
+---------- 1 root root    0 Feb  4 04:46 3.txt
+d--------- 2 root root 4096 Feb  4 05:00 Ass1
+drwxr-xr-x 2 root root 4096 Feb  4 05:00 Ass2
+-rw-r--r-- 1 root root   30 Dec 27 09:23 iprange.txt
+-rwxr-xr-- 1 root root  216 Dec 27 09:36 ipsweep.sh
+-rw-r--r-- 1 root root 2423 Feb  4 05:04 ip.txt
+drwxr-xr-x 4 root root 4096 Jan  1 02:16 lscript
+root@kali:~/Desktop# 
+root@kali:~/Desktop# chown bob 2.txt
+root@kali:~/Desktop# 
+root@kali:~/Desktop# 
+                                                                                         SET - B	
+root@kali:~/Desktop# ps aux
+USER        PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root          1  0.0  0.2 124368  8688 ?        Ss   04:41   0:01 /sbin/init
+root          2  0.0  0.0      0     0 ?        S    04:41   0:00 [kthreadd]
+root          3  0.0  0.0      0     0 ?        I<   04:41   0:00 [rcu_gp]
+root          4  0.0  0.0      0     0 ?        I<   04:41   0:00 [rcu_par_gp]
+root          5  0.0  0.0      0     0 ?        I    04:41   0:00 [kworker/0:0-e
+root          6  0.0  0.0      0     0 ?        I<   04:41   0:00 [kworker/0:0H-
+root          8  0.0  0.0      0     0 ?        I<   04:41   0:00 [mm_percpu_wq]
+root          9  0.0  0.0      0     0 ?        S    04:41   0:00 [ksoftirqd/0]
+root         10  0.0  0.0      0     0 ?        I    04:41   0:00 [rcu_sched]
+root         11  0.0  0.0      0     0 ?        I    04:41   0:00 [rcu_bh]
+root         12  0.0  0.0      0     0 ?        S    04:41   0:00 [migration/0]
+root         13  0.0  0.0      0     0 ?        S    04:41   0:00 [watchdog/0]
+root         14  0.0  0.0      0     0 ?        S    04:41   0:00 [cpuhp/0]
+root         15  0.0  0.0      0     0 ?        S    04:41   0:00 [kdevtmpfs]
+root         16  0.0  0.0      0     0 ?        I<   04:41   0:00 [netns]
+root         17  0.0  0.0      0     0 ?        S    04:41   0:00 [kauditd]
+root         18  0.0  0.0      0     0 ?        S    04:41   0:00 [khungtaskd]
+root         19  0.0  0.0      0     0 ?        S    04:41   0:00 [oom_reaper]
+root         20  0.0  0.0      0     0 ?        I<   04:41   0:00 [writeback]
+root         21  0.0  0.0      0     0 ?        S    04:41   0:00 [kcompactd0]
+root         22  0.0  0.0      0     0 ?        SN   04:41   0:00 [ksmd]
+root         23  0.0  0.0      0     0 ?        SN   04:41   0:01 [khugepaged]
+root         24  0.0  0.0      0     0 ?        I<   04:41   0:00 [crypto]
+root         25  0.0  0.0      0     0 ?        I<   04:41   0:00 [kintegrityd]
+root         26  0.0  0.0      0     0 ?        I<   04:41   0:00 [kblockd]
+root        109  0.0  0.0      0     0 ?        I<   04:41   0:00 [mpt_poll_0]
+root        110  0.0  0.0      0     0 ?        I<   04:41   0:00 [mpt/0]
+root        111  0.0  0.0      0     0 ?        I<   04:41   0:00 [ata_sff]
+root        112  0.0  0.0      0     0 ?        S    04:41   0:00 [scsi_eh_0]
+root        113  0.0  0.0      0     0 ?        I<   04:41   0:00 [scsi_tmf_0]
+root        114  0.0  0.0      0     0 ?        S    04:41   0:00 [scsi_eh_1]
+root        115  0.0  0.0      0     0 ?        I<   04:41   0:00 [scsi_tmf_1]
+root        124  0.0  0.0      0     0 ?        S    04:41   0:00 [scsi_eh_2]
+root        126  0.0  0.0      0     0 ?        I<   04:41   0:00 [scsi_tmf_2]
+root        128  0.0  0.0      0     0 ?        S    04:41   0:00 [scsi_eh_3]
+root        130  0.0  0.0      0     0 ?        I<   04:41   0:00 [scsi_tmf_3]
+root        132  0.0  0.0      0     0 ?        S    04:41   0:00 [scsi_eh_4]
+root        135  0.0  0.0      0     0 ?        I<   04:41   0:00 [scsi_tmf_4]
+root        136  0.0  0.0      0     0 ?        S    04:41   0:00 [scsi_eh_5]
+root        138  0.0  0.0      0     0 ?        I<   04:41   0:00 [scsi_tmf_5]
+root        140  0.0  0.0      0     0 ?        S    04:41   0:00 [scsi_eh_6]
+
+root        193  0.0  0.0      0     0 ?        S    04:41   0:00 [scsi_eh_19]
+root        196  0.0  0.0      0     0 ?        I<   04:41   0:00 [scsi_tmf_19]
+root        198  0.0  0.0      0     0 ?        S    04:41   0:00 [scsi_eh_20]
+
+root       2358  0.0  0.0  16596  3040 pts/0    R+   05:11   0:00 ps aux
+root@kali:~/Desktop# 
+root@kali:~/Desktop# ps
+\   PID TTY          TIME CMD
+  2263 pts/0    00:00:00 bash
+  2368 pts/0    00:00:00 ps
+root@kali:~/Desktop# ps 2263
+   PID TTY      STAT   TIME COMMAND
+  2263 pts/0    Ss     0:00 bash
+root@kali:~/Desktop# ps -A
+   PID TTY          TIME CMD
+     1 ?        00:00:01 systemd
+     2 ?        00:00:00 kthreadd
+     3 ?        00:00:00 rcu_gp
+     4 ?        00:00:00 rcu_par_gp
+     5 ?        00:00:00 kworker/0:0-events
+     6 ?        00:00:00 kworker/0:0H-kblockd
+     8 ?        00:00:00 mm_percpu_wq
+     9 ?        00:00:00 ksoftirqd/0
+    10 ?        00:00:00 rcu_sched
+root@kali:~/Desktop# ps 1 -A
+error: process ID list syntax error
+
+Usage:
+ ps [options]
+
+ Try 'ps --help <simple|list|output|threads|misc|all>'
+  or 'ps --help <s|l|o|t|m|a>'
+ for additional help text.
+
+For more details see ps(1).
+root@kali:~/Desktop# ps(1)
+
+root@kali:~/Desktop# 
+root@kali:~/Desktop# service apache2 start
+root@kali:~/Desktop# kill apache2
+root@kali:~/Desktop# airmon-ng check kill
+
+Killing these processes:
+
+   PID Name
+   604 dhclient
+   882 wpa_supplicant
+
+root@kali:~/Desktop# kill 882
+[2] Terminated
+
+root@kali:~/Desktop# free -m
+              total        used        free      shared  buff/cache   available
+Mem:           3925        1012        2106          20         806        2645
+Swap:          4093           0        4093
+root@kali:~/Desktop# maminfo
+bash: maminfo: command not found
+root@kali:~/Desktop# meminfo
+bash: meminfo: command not found
+root@kali:~/Desktop# cat /proc/meminfo
+MemTotal:        4020044 kB
+MemFree:         2157764 kB
+MemAvailable:    2709372 kB
+Buffers:          148672 kB
+Cached:           578960 kB
+SwapCached:            0 kB
+Active:          1128088 kB
+Inactive:         289688 kB
+Active(anon):     695276 kB
+Inactive(anon):    15600 kB
+Active(file):     432812 kB
+Inactive(file):   274088 kB
+Unevictable:           0 kB
+Mlocked:               0 kB
+SwapTotal:       4192252 kB
+SwapFree:        4192252 kB
+Dirty:                 0 kB
+Writeback:             0 kB
+AnonPages:        662412 kB
+Mapped:           196080 kB
+Shmem:             20736 kB
+Slab:             169896 kB
+SReclaimable:      97912 kB
+SUnreclaim:        71984 kB
+KernelStack:       10076 kB
+PageTables:        18948 kB
+NFS_Unstable:          0 kB
+Bounce:                0 kB
+WritebackTmp:          0 kB
+CommitLimit:     6202272 kB
+Committed_AS:    4012964 kB
+VmallocTotal:   34359738367 kB
+VmallocUsed:           0 kB
+VmallocChunk:          0 kB
+HardwareCorrupted:     0 kB
+AnonHugePages:    346112 kB
+ShmemHugePages:        0 kB
+ShmemPmdMapped:        0 kB
+HugePages_Total:       0
+HugePages_Free:        0
+HugePages_Rsvd:        0
+HugePages_Surp:        0
+Hugepagesize:       2048 kB
+Hugetlb:               0 kB
+DirectMap4k:      159616 kB
+DirectMap2M:     2985984 kB
+DirectMap1G:     3145728 kB
+root@kali:~/Desktop# 
+root@kali:~# ps -fl -C PID
+F S UID         PID   PPID  C PRI  NI ADDR SZ WCHAN  STIME TTY          TIME CMD
+root@kali:~# ps -fl -C 2475
+F S UID         PID   PPID  C PRI  NI ADDR SZ WCHAN  STIME TTY          TIME CMD
+root@kali:~# renice -n "-5"-p 2475
+renice: invalid priority '-5-p'
+Try 'renice --help' for more information.
+root@kali:~# renice -n -5 -p 2475
+2475 (process ID) old priority 0, new priority -5
+root@kali:~# if config
+> ^C^C
+root@kali:~# 
+
+                                                                                  SET - C
+
+
+root@kali:~# ifconfig
+eth0: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+        inet6 fe80::20c:29ff:feda:656a  prefixlen 64  scopeid 0x20<link>
+        ether 00:0c:29:da:65:6a  txqueuelen 1000  (Ethernet)
+        RX packets 899  bytes 56506 (55.1 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 1807  bytes 153466 (149.8 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+        device interrupt 19  base 0x2000  
+
+lo: flags=73<UP,LOOPBACK,RUNNING>  mtu 65536
+        inet 127.0.0.1  netmask 255.0.0.0
+        inet6 ::1  prefixlen 128  scopeid 0x10<host>
+        loop  txqueuelen 1000  (Local Loopback)
+        RX packets 931  bytes 334805 (326.9 KiB)
+        RX errors 0  dropped 0  overruns 0  frame 0
+        TX packets 931  bytes 334805 (326.9 KiB)
+        TX errors 0  dropped 0 overruns 0  carrier 0  collisions 0
+
+root@kali:~# service apache2 start
+root@kali:~# service apache host client start
+root@kali:~# service network access port -p 21 start
+root@kali:~# srtevice postgresql start
+root@kali:~# python -m pyftpdlib -p 21 w
+[I 2020-02-04 06:11:14] >>> starting FTP server on 0.0.0.0:21, pid=2172 <<<
+[I 2020-02-04 06:11:14] concurrency model: async
+[I 2020-02-04 06:11:14] masquerade (NAT) address: None
+[I 2020-02-04 06:11:14] passive ports: None
+[I 2020-02-04 06:12:07] 192.168.42.45:53872-[] FTP session opened (connect)
+[I 2020-02-04 06:12:07] 192.168.42.45:53872-[anonymous] USER 'anonymous' logged in.
+[I 2020-02-04 06:12:07] 192.168.42.45:53872-[anonymous] CWD /root 250
+[I 2020-02-04 06:12:16] 192.168.42.45:53872-[anonymous] CWD /root/.BurpSuite 250
+[I 2020-02-04 06:12:26] 192.168.42.45:53872-[anonymous] CWD /root/python3 250
+[I 2020-02-04 06:12:28] 192.168.42.45:53872-[anonymous] RETR /root/python3/python101.py completed=1 bytes=2689 seconds=0.001
+^C[I 2020-02-04 06:12:47] received interrupt signal
+[I 2020-02-04 06:12:47] >>> shutting down FTP server (2 active socket fds) <<<
+[I 2020-02-04 06:12:47] 192.168.42.45:53872-[anonymous] FTP session closed (disconnect).
+root@kali:~# 
+
+

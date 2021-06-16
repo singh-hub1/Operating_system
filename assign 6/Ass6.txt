@@ -1,0 +1,71 @@
+                                                                                      SET - A
+vi Mycollege.txt
+i :-   enter i for insert
+a:-   input mode for after cursor location
+^:-  to go at the begining 
+$:-  to go at the ending of the file
+
+
+
+vi search
+i :-   enter i for insert
+a:-   input mode for after cursor location
+/simple :- It looks for th word simple in te given text
+n:- to navigate from top 
+shift + n :- from bottom
+
+                                                                                     SET - B
+
+
+vi input
+^:-  to go at the begining 
+o:-  to add a new line 
+3dd :- deletes 3 lines
+J :- to merge the lines
+u :- to restore/ to undo
+/dev :- to search dev from the file
+
+
+
+vi Hello
+
+cc :- Removes the line 
+D :- Deletes form WHERE the cursor is pointing
+C :- moves to next line form WHERE the cursor is pointing
+s :-  removes the letter form WHERE the cursor is pointing
+S :- Removes the line
+R :- Works as cursor letter remover
+rchr :- working on it......
+
+
+                                                                                     SET - C 
+
+
+
+
+
+
+
+vi  Mycollege
+
+^    :-cursor place at the very first line 
+%/college/institute:- replace college with institute
+:2  :- Moves to the 2nd line 
+control command
+/India :- search for India
+4yy :- copies  4 lines form where cursor pointed 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   

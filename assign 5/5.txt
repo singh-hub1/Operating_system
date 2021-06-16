@@ -1,0 +1,59 @@
+bash-4.1$ cat > a.txt
+kushal
+bash-4.1$ cat > b.txt
+mahajan
+bash-4.1$ cat > c.txt
+fybca
+bash-4.1$ ls -l 
+total 12
+-rw-rw-r--. 1 bcafy2 bcafy2 0 Jan 28  2020 5.txt
+-rw-rw-r--. 1 bcafy2 bcafy2 7 Jan 28  2020 a.txt
+-rw-rw-r--. 1 bcafy2 bcafy2 8 Jan 28  2020 b.txt
+----------. 1 bcafy2 bcafy2 6 Jan 28  2020 c.txt
+bash-4.1$ chmod 664 a.txt
+bash-4.1$ ls -l
+total 20
+-rw-rw-r--. 1 bcafy2 bcafy2  305 Jan 28 07:49 5.txt~
+dr--rw---x. 2 bcafy2 bcafy2 4096 Jan 28 08:17 assignment
+-rw-rw-r--. 1 bcafy2 bcafy2    7 Jan 28 07:43 a.txt
+-rw-r-x--x. 1 bcafy2 bcafy2    8 Jan 28 07:43 b.txt
+-rwxrwxrwx. 1 bcafy2 bcafy2    6 Jan 28 07:43 c.txt
+bash-4.1$ chmod 777 b.txt
+bash-4.1$ ls -l
+total 20
+-rw-rw-r--. 1 bcafy2 bcafy2  305 Jan 28 07:49 5.txt~
+dr--rw---x. 2 bcafy2 bcafy2 4096 Jan 28 08:17 assignment
+-rw-rw-r--. 1 bcafy2 bcafy2    7 Jan 28 07:43 a.txt
+-rwxrwxrwx. 1 bcafy2 bcafy2    8 Jan 28 07:43 b.txt
+-rwxrwxrwx. 1 bcafy2 bcafy2    6 Jan 28 07:43 c.txt
+bash-4.1$ chmod 651 c.txt
+bash-4.1$ ls -l
+total 20
+-rw-rw-r--. 1 bcafy2 bcafy2  305 Jan 28 07:49 5.txt~
+dr--rw---x. 2 bcafy2 bcafy2 4096 Jan 28 08:17 assignment
+-rw-rw-r--. 1 bcafy2 bcafy2    7 Jan 28 07:43 a.txt
+-rwxrwxrwx. 1 bcafy2 bcafy2    8 Jan 28 07:43 b.txt
+-rw-r-x--x. 1 bcafy2 bcafy2    6 Jan 28 07:43 c.txt
+
+bash-4.1$ mkdir assignment
+bash-4.1$ cd assignment
+bash-4.1$ mkdir ass1
+bash-4.1$ mkdir ass2
+bash-4.1$ chmod 461 ass1
+bash-4.1$ chmod 461 ass2
+bash-4.1$ ls -l
+total 0
+-r--rw---x. 1 bcafy2 bcafy2 0 Jan 28  2020 ass1
+-r--rw---x. 1 bcafy2 bcafy2 0 Jan 28  2020 ass2
+bash-4.1$ cd ..
+bash-4.1$ pwd
+/home/cslogin/bcafy2/Desktop/operating system/assign 5
+bash-4.1$ chmod 461 assignment
+bash-4.1$ ls -l
+total 20
+-rw-rw-r--. 1 bcafy2 bcafy2  305 Jan 28 07:49 5.txt~
+dr--rw---x. 2 bcafy2 bcafy2 4096 Jan 28  2020 assignment
+-rwxrw-r--. 1 bcafy2 bcafy2    7 Jan 28 07:43 a.txt
+-rw-r-x--x. 1 bcafy2 bcafy2    8 Jan 28 07:43 b.txt
+-rwxrwxrwx. 1 bcafy2 bcafy2    6 Jan 28 07:43 c.txt
+

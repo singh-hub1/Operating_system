@@ -1,0 +1,261 @@
+root@kali:~# cat /etc/shells
+# /etc/shells: valid login shells
+/bin/sh
+/bin/bash
+/usr/bin/bash
+/bin/rbash
+/usr/bin/rbash
+/bin/dash
+/usr/bin/dash
+/usr/bin/tmux
+/usr/bin/screen
+/bin/zsh
+/usr/bin/zsh
+root@kali:~# which bash
+/usr/bin/bash
+root@kali:~# 
+root@kali:~# cd Desktop
+root@kali:~/Desktop# touch hello.sh
+root@kali:~/Desktop# chmod +x helllo.txt
+root@kali:~/Desktop# chmod +x hello.sh
+root@kali:~/Desktop# ls -al
+total 56
+drwxr-xr-x  5 root root  4096 Feb  7 06:21 .
+drwxr-xr-x 23 root root  4096 Feb  7 06:17 ..
+----------  1 1000 root     0 Feb  4 04:46 1.txt
+----------  1 1000 root     0 Feb  4 04:46 2.txt
+----------  1 root root     0 Feb  4 04:46 3.txt
+d---------  2 root root  4096 Feb  4 05:00 Ass1
+drwxr-xr-x  2 root root  4096 Feb  4 05:00 Ass2
+-rw-r--r--  1 root root   380 Feb  4 08:17 editor
+-rw-r--r--  1 root root 12288 Feb  4 08:24 .editor.swp
+-rwxr-xr-x  1 root root     0 Feb  7 06:21 hello.sh
+-rw-------  1 root root 12288 Feb  4 09:34 .hello.swp
+-rw-r--r--  1 root root    30 Dec 27 09:23 iprange.txt
+-rwxr-xr--  1 root root   216 Dec 27 09:36 ipsweep.sh
+drwxr-xr-x  4 root root  4096 Jan  1 02:16 lscript
+root@kali:~/Desktop# 
+root@kali:~/Desktop# cat > hello.sh 
+#! /bin/bash
+echo $BASH
+echo $BASH_VERSION
+echo $HOME
+ECHO $PWD
+^C  
+root@kali:~/Desktop# ./hello.sh
+/bin/bash
+4.4.23(1)-release
+/root
+./hello.sh: line 5: ECHO: command not found
+root@kali:~/Desktop# ./hello.sh
+/bin/bash
+4.4.23(1)-release
+/root
+/root/Desktop
+
+touch ass1.txt
+root@kali:~/Desktop# 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+This is our shell/bin/bash
+This is our version name4.4.23(1)-release
+This is our Home /root
+This is our /root/UUI/shell
+The name is Mark
+The value is 10
+Enter your name and your mothers name:- 
+
+The name is and
+Enter your password :-  
+Your password is = 
+Enter your password :-   
+Your password is = 
+Enter the names :- 
+
+Names :- , , 
+> echo $1$2$3
+
+
+0
+./prac1.sh: line 50: [: 10: unary operator expected
+./prac1.sh: line 76: syntax error: unexpected end of file
+root@kali:~/UUI/shell# clear
+
+root@kali:~/UUI/shell# ./prac1.sh 
+Hello World
+This is our shell/bin/bash
+This is our version name4.4.23(1)-release
+This is our Home /root
+This is our /root/UUI/shell
+The name is Mark
+The value is 10
+Enter your name and your mothers name:- 
+
+The name is and
+Enter your password :-  
+Your password is = 
+Enter your password :-   
+Your password is = 
+Enter the names :- 
+
+Names :- , , 
+> echo $1$2$3
+
+
+0
+./prac1.sh: line 50: [: 10: unary operator expected
+Condition True
+root@kali:~/UUI/shell# ./prac1.sh 
+Hello World
+This is our shell/bin/bash
+This is our version name4.4.23(1)-release
+This is our Home /root
+This is our /root/UUI/shell
+The name is Mark
+The value is 10
+Enter your name and your mothers name:- 
+    
+The name is and
+Enter your password :-  
+Your password is = 
+Enter your password :-   
+Your password is = 
+Enter the names :- 
+
+Names :- , , 
+> echo $1$2$3
+
+
+0
+./prac1.sh: line 50: [: 10: unary operator expected
+Condition True
+Enter 2 numbers :- 
+23 43
+66
+root@kali:~/UUI/shell# ./ass2.sh
+Enter the principle amount.
+34
+Enter the intrest amount.
+5  
+Enter the time intrest
+6
+./ass2.sh: line 9: syntax error near unexpected token `('
+./ass2.sh: line 9: `echo (( a /* b))'
+root@kali:~/UUI/shell# ./ass2.sh
+Enter the principle amount.
+43567
+Enter the intrest amount.
+5
+Enter the time intrest
+6 
+./ass2.sh: line 9: syntax error near unexpected token `('
+./ass2.sh: line 9: `echo (( a \* b))'
+root@kali:~/UUI/shell# ./ass2.sh
+Enter the principle amount.
+643253
+Enter the intrest amount.
+74 
+Enter the time intrest
+6543
+./ass2.sh: line 9: syntax error near unexpected token `('
+./ass2.sh: line 9: `echo (( a \* b ))'
+root@kali:~/UUI/shell# ./prac1.sh 
+Hello World
+This is our shell/bin/bash
+This is our version name4.4.23(1)-release
+This is our Home /root
+This is our /root/UUI/shell
+The name is Mark
+The value is 10
+Enter your name and your mothers name:- 
+
+The name is and
+Enter your password :-  
+Your password is = 
+Enter your password :-   
+Your password is = 
+Enter the names :- 
+
+Names :- , , 
+> echo $1$2$3
+
+
+0
+./prac1.sh: line 50: [: 10: unary operator expected
+Condition True
+Enter 2 numbers :- 
+34 5
+39
+29
+170
+6
+4
+root@kali:~/UUI/shell# ./ass2.sh
+Enter the principle amount.
+46367
+Enter the intrest amount.
+5
+Enter the time intrest
+6 
+./ass2.sh: line 9: syntax error near unexpected token `('
+./ass2.sh: line 9: `echo (( a * b ))'
+root@kali:~/UUI/shell# ./ass2.sh
+Enter the principle amount.
+67547
+Enter the intrest amount.
+6
+Enter the time intrest
+32  
+0
+root@kali:~/UUI/shell# ./ass2.sh
+Enter the principle amount.
+4632  
+Enter the intrest amount.
+2
+Enter the time intrest
+
+0
+root@kali:~/UUI/shell# ./ass2.sh
+Enter the principle amount.
+463246
+Enter the intrest amount.
+5
+Enter the time intrest
+6
+2316230
+root@kali:~/UUI/shell# ./ass2.sh
+Enter the principle amount.
+62347
+Enter the intrest amount.
+4
+Enter the time intrest
+6
+14963
+root@kali:~/UUI/shell# 
+
+

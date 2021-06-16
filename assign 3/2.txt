@@ -1,0 +1,41 @@
+bash-4.1$ mkdir eclipse-workspace
+bash-4.1$ ls
+abc.txt  asd.txt  c.txt  eclipse-workspace  Hello.java
+bash-4.1$ cd eclipse-workspace
+bash-4.1$ ls
+bash-4.1$ mkdir ishwar
+bash-4.1$ ls
+ishwar
+bash-4.1$ cd ..
+bash-4.1$ cd eclipse-workspace
+bash-4.1$ cal
+    December 2019   
+Su Mo Tu We Th Fr Sa
+ 1  2  3  4  5  6  7
+ 8  9 10 11 12 13 14
+15 16 17 18 19 20 21
+22 23 24 25 26 27 28
+29 30 31
+
+bash-4.1$ ls
+ishwar
+bash-4.1$ cd ..
+bash-4.1$ cd eclipse-workspace
+bash-4.1$ ls
+ishwar
+bash-4.1$ ls who -u
+ls: cannot access who: No such file or directory
+bash-4.1$ ls who-u
+ls: cannot access who-u: No such file or directory
+bash-4.1$  who -u
+bcafy2   tty1         2019-12-17 07:22  old         2648 (:0)
+bcafy2   pts/0        2019-12-17 08:15 00:17        3889 (:0.0)
+bcafy2   pts/1        2019-12-17 08:29   .          3889 (:0.0)
+bash-4.1$ banner ishwar
+bash: banner: command not found
+bash-4.1$ who am i
+bcafy2   pts/1        2019-12-17 08:29 (:0.0)
+bash-4.1$ tty
+/dev/pts/1
+bash-4.1$ 
+

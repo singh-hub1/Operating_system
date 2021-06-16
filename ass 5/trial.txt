@@ -1,0 +1,3 @@
+vi hello.sh
+echo"hello"
+save hello.sh

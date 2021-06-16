@@ -1,0 +1,258 @@
+bash-4.2$ ls -l | wc -l
+2
+bash-4.2$ ls
+fybca
+bash-4.2$ ls -1
+fybca
+bash-4.2$ ls -1 | wc -l
+1
+bash-4.2$ cd Desktop
+bash-4.2$ ls
+eclipse-workspace
+bash-4.2$ ls -lh
+total 4.0K
+drwxrwxr-x. 3 bcafy2 bcafy2 4.0K Dec 17 08:37 eclipse-workspace
+bash-4.2$ cd fybca
+bash-4.2$ ls
+a4.txt	abc.txt  CO  c.txt  OS	p.txt  q.txt  RDBMS  r.txt
+bash-4.2$ wc -w a4.txt
+41 a4.txt
+bash-4.2$ wc -l a4.txt
+17 a4.txt
+bash-4.2$ wc -L a4.txt
+63 a4.txt
+bash-4.2$ paste -d abc.txt
+hiii
+hiii
+hlw
+hlw
+bash-4.2$ du -smc * | sort -r
+40	total
+40	eclipse-workspace
+1	xyz.txt
+1	Videos
+1	Templates
+1	Public
+1	Pictures
+1	p1.c
+1	Music
+1	Hello.java
+1	fybca
+1	Downloads
+1	Documents
+1	Desktop
+1	assignment
+1	a.out
+1	abc
+0	z.txt
+0	r.txt
+0	new file~
+0	khushal 3~
+0	khushal 2~
+bash-4.2$ who -q
+bcafy2 bcafy2
+# users=2
+bash-4.2$ cat > a.txt 
+ehfwehf
+bash-4.2$ cat > b.txt 
+dhqwy
+bash-4.2$ touch c.txt
+bash-4.2$ cat a.txt b.txt > c.txt
+bash-4.2$ sort a.txt
+1. unix distributed 05 server
+2. kernel
+3. rasberry pi
+4. linux vitual 3 server
+5. unix distributed 05 server
+6. distributed procesing 6 system
+bash-4.2$ sort -r a.txt
+6. distributed procesing 6 system
+5. unix distributed 05 server
+4. linux vitual 3 server
+3. rasberry pi
+2. kernel
+1. unix distributed 05 server
+bash-4.2$ sort -n a.txt
+1. unix distributed 05 server
+2. kernel
+3. rasberry pi
+4. linux vitual 3 server
+5. unix distributed 05 server
+6. distributed procesing 6 system
+bash-4.2$ sort -k 2 a.txt
+6. distributed procesing 6 system
+2. kernel
+4. linux vitual 3 server
+3. rasberry pi
+1. unix distributed 05 server
+5. unix distributed 05 server
+bash-4.2$ sort -k 2 4 a.txt
+sort: cannot read: 4: No such file or directory
+bash-4.2$ sort -k 2  a.txt -r
+5. unix distributed 05 server
+1. unix distributed 05 server
+3. rasberry pi
+4. linux vitual 3 server
+2. kernel
+6. distributed procesing 6 system
+bash-4.2$ sort a.txt | uniq
+1. unix distributed 05 server
+2. kernel
+3. rasberry pi
+4. linux vitual 3 server
+5. unix distributed 05 server
+6. distributed procesing 6 system
+bash-4.2$ touch k.txt
+bash-4.2$ pwd
+/home/cslogin/bcafy2
+bash-4.2$ cat > k.txt
+welcom tp ostechnix
+welcom to ostechnix
+linux is the creator of  linux
+linux is secure by default
+linux is creator of linux
+top 500 super computers are powered by linux
+bash-4.2$ uniq k.txt
+welcom tp ostechnix
+welcom to ostechnix
+linux is the creator of  linux
+linux is secure by default
+linux is creator of linux
+top 500 super computers are powered by linux
+bash-4.2$ uniq k.txt
+welcom to ostechnix
+linux is the creator of  linux
+linux is secure by default
+linux is creator of linux
+top 500 super computers are powered by linux
+bash-4.2$ uniq -u k.txt
+linux is the creator of  linux
+linux is secure by default
+linux is creator of linux
+top 500 super computers are powered by linux
+bash-4.2$ uniq -D k.txt
+welcom to ostechnix
+welcom to ostechnix
+bash-4.2$ uniq -c k.txt
+      2 welcom to ostechnix
+      1 linux is the creator of  linux
+      1 linux is secure by default
+      1 linux is creator of linux
+      1 top 500 super computers are powered by linux
+bash-4.2$ uniq -c k.txt
+      2 welcom to ostechnix
+      1 linux is the creator of  linux
+      1 linux is secure by default
+      1 linux is the creator of linux
+      1 top 500 super computers are powered by linux
+bash-4.2$ uniq -c k.txt
+      2 welcom to ostechnix
+      1 linux is the creator of  linux
+      1 linux is secure by default
+      1 linux is the creator of linux
+      1 top 500 super computers are powered by linux
+bash-4.2$ uniq -u k.txt
+linux is the creator of  linux
+linux is secure by default
+linux is the creator of linux
+top 500 super computers are powered by linux
+bash-4.2$ uniq -w 4 k.txt -d
+welcom to ostechnix
+linux is the creator of  linux
+bash-4.2$ uniq -f 4 k.txt
+welcom to ostechnix
+linux is the creator of  linux
+linux is secure by default
+linux is the creator of linux
+top 500 super computers are powered by linux
+bash-4.2$ touch l.txt
+bash-4.2$ cat > l.txt
+this is line  1 UNIX UNIX
+this is line 2 unix
+this is line 3 unix unix
+this is line 4 hello
+bash-4.2$ grep -i unix l.txt
+this is line  1 UNIX UNIX
+this is line 2 unix
+this is line 3 unix unix
+bash-4.2$ grep -n unix l.txt
+2:this is line 2 unix
+3:this is line 3 unix unix
+bash-4.2$ grep -n "unix" l.txt
+2:this is line 2 unix
+3:this is line 3 unix unix
+bash-4.2$ grep -c "unix" l.txt
+2
+bash-4.2$ grep -h "unix" l.txt
+this is line 2 unix
+this is line 3 unix unix
+bash-4.2$ grep -h "unix" l.txt
+this is line 2 unix
+bash-4.2$ grep -n "unix" l.txt
+2:this is line 2 unix
+bash-4.2$ grep -v "unix" l.txt
+this is line  1 UNIX UNIX
+this is line 3 Unix Unix
+this is line 4 hello
+bash-4.2$ grep "^u" l.txt | grep "x$" l.txt
+this is line 2 unix
+this is line 3 Unix Unix
+bash-4.2$ cat > file.txt
+unix or linux os
+is unix good os
+is linux good os
+bash-4.2$ cut -c 4 file.txt
+x
+u
+l
+bash-4.2$ cut -b 4-7 file.txt
+x or
+unix
+linu
+bash-4.2$ cut -d " " -f 2 file.txt
+or
+unix
+linux
+bash-4.2$ cat > m.txt
+Linux
+Unix
+Solaris
+HPUX
+AIX
+bash-4.2$ paste -s m.txt 
+Linux	Unix	Solaris	HPUX	AIX
+bash-4.2$ paste -s -d "," m.txt 
+Linux,Unix,Solaris,HPUX,AIX
+bash-4.2$ paste m.txt
+Linux
+Unix
+Solaris
+HPUX
+AIX
+bash-4.2$ paste m.txt k.txt
+Linux	welcom to ostechnix
+Unix	welcom to ostechnix
+Solaris	linux is the creator of  linux
+HPUX	linux is secure by default
+AIX	linux is the creator of linux
+	top 500 super computers are powered by linux
+bash-4.2$ paste -d ";" m.txt
+Linux
+Unix
+Solaris
+HPUX
+AIX
+bash-4.2$ paste -d ";" m.txt k.txt
+Linux;welcom to ostechnix
+Unix;welcom to ostechnix
+Solaris;linux is the creator of  linux
+HPUX;linux is secure by default
+AIX;linux is the creator of linux
+;top 500 super computers are powered by linux
+
+
+
+
+ 
+
+
